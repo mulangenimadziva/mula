@@ -1,0 +1,25 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#1f6feb;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:var(--bg); margin:0; color:#111}
+.container{max-width:920px;margin:28px auto;padding:16px}
+.header{text-align:center;margin-bottom:20px}
+.header h1{margin:0;font-size:28px}
+.tagline{color:var(--muted);margin-top:6px}
+.card{background:var(--card);padding:18px;border-radius:8px;box-shadow:0 1px 3px rgba(16,24,40,0.06);margin-bottom:16px}
+.services{display:flex;flex-wrap:wrap;gap:12px}
+.service{flex:1 1 200px;padding:12px;border-radius:6px;background:linear-gradient(180deg,rgba(31,111,235,0.04),transparent)}
+.pricing{display:flex;gap:12px;flex-wrap:wrap}
+.priceCard{padding:12px;border:1px solid #eef2ff;border-radius:6px;min-width:140px}
+.bookingForm{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bookingForm label{display:flex;flex-direction:column;font-size:14px}
+.bookingForm input,.bookingForm select,.bookingForm textarea{padding:8px;margin-top:8px;border:1px solid #e5e7eb;border-radius:6px}
+.bookingForm textarea{grid-column:span 2;min-height:90px}
+.bookingForm .actions{grid-column:span 2;text-align:right}
+button{background:var(--accent);color:white;padding:10px 14px;border:none;border-radius:6px;cursor:pointer}
+.status{margin-top:10px;color:green}
+@media (max-width:600px){.bookingForm{grid-template-columns:1fr}.priceCard{min-width:100%}}
